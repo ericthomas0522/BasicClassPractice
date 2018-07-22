@@ -22,13 +22,28 @@ namespace BasicClassPractice
 
             //The homework section for this chapter is below.
 
+            //creating 2 balls. Had to look up the fact that you can include a class like color as a private member of another class.
+            //It is pretty cool that you can reuse the base color class to set a color for any object. Just needs to be a private instance in that class.
             Ball ballOne = new Ball(new Color(33, 25, 76), 4);
             Ball ballTwo = new Ball(new Color(44, 33, 44), 1);
 
+            //throwing balls, popping balls, and displaying throw count. Balls that are popped should not increase.
             ballOne.Throw();
             ballOne.Throw();
-            Console.WriteLine(ballOne.TimesThrown());
+            Console.WriteLine("Ball one has been thrown " + ballOne.TimesThrown() + " times");
             ballOne.Pop();
+            Console.WriteLine("We popped ball one!");
+            ballOne.Throw();
+            Console.WriteLine("Ball one has been thrown " + ballOne.TimesThrown() + " times");
+            ballTwo.Throw();
+            Console.WriteLine("Ball two has been thrown " + ballTwo.TimesThrown() + " times");
+            ballTwo.Throw();
+            Console.WriteLine("Ball two has been thrown " + ballTwo.TimesThrown() + " times");
+            ballTwo.Pop();
+            Console.WriteLine("We popped ball two!");
+            ballTwo.Throw();
+            Console.WriteLine("Ball two has been thrown " + ballTwo.TimesThrown() + " times");
+            Console.ReadLine();
         }
     }
 }
