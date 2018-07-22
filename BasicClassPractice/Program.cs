@@ -21,6 +21,9 @@ namespace BasicClassPractice
             Console.ReadLine();
 
             //The homework section for this chapter is below.
+
+            Color customColor = new Color(55, 65, 70);
+            Console.ReadLine();
         }
     }
 }

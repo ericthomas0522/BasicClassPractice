@@ -72,5 +72,10 @@ namespace BasicClassPractice
         {
             this.alpha = alpha;
         }
+
+        public int GetGreyscale()
+        {
+            return ((red + blue + green) / 3);
+        }
     }
 }
