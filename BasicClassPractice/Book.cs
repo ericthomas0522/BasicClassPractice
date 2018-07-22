@@ -12,5 +12,21 @@ namespace BasicClassPractice
         private string author;
         private int pages;
         private int wordCount;
+
+        //Constructor for the class. Must share the same name as the class.
+        public Book(string title, string author)
+        {
+            this.title = title;
+            this.author = author;
+        }
+
+        //Overloading constructor for when you know the pages and wordcount.
+        public Book(string title, string author, int pages, int wordCount)
+        {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+            this.wordCount = wordCount;
+        }
     }
 }
