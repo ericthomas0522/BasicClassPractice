@@ -22,8 +22,13 @@ namespace BasicClassPractice
 
             //The homework section for this chapter is below.
 
-            Color customColor = new Color(55, 65, 70);
-            Console.ReadLine();
+            Ball ballOne = new Ball(new Color(33, 25, 76), 4);
+            Ball ballTwo = new Ball(new Color(44, 33, 44), 1);
+
+            ballOne.Throw();
+            ballOne.Throw();
+            Console.WriteLine(ballOne.TimesThrown());
+            ballOne.Pop();
         }
     }
 }

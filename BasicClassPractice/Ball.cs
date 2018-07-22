@@ -10,20 +10,21 @@ namespace BasicClassPractice
     {
         private int size;
         private int timesThrown;
-      
+        private Color color;
 
-        public Ball(int size)
+        public Ball(Color color, int size)
         {
             this.size = size;
+            this.color = color;
             timesThrown = 0;
         }
 
-        public void Pop(Ball ball)
+        public void Pop()
         {
             size = 0;
         }
 
-        public void Throw(Ball ball)
+        public void Throw()
         {
             if (size > 0)
             {
@@ -31,7 +32,7 @@ namespace BasicClassPractice
             }
         }
 
-        public int TimesThrown(Ball ball)
+        public int TimesThrown()
         {
             return timesThrown;
         }
