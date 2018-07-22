@@ -18,6 +18,9 @@ namespace BasicClassPractice
 
             //returns the title of the book
             Console.WriteLine(book.GetTitle());
+            Console.ReadLine();
+
+            //The homework section for this chapter is below.
         }
     }
 }
