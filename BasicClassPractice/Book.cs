@@ -28,5 +28,20 @@ namespace BasicClassPractice
             this.pages = pages;
             this.wordCount = wordCount;
         }
+
+        public string GetTitle()
+        {
+            return title;
+        }
+
+        public void SetTitle(string title)
+        {
+            this.title = title;
+        }
+
+        public void AssignWordCountFromText(string text)
+        {
+            wordCount = text.Split(' ').Length;
+        }
     }
 }
