@@ -53,5 +53,24 @@ namespace BasicClassPractice
 
         //sets a new value
 
+        public void SetRed(int red)
+        {
+            this.red = red;
+        }
+
+        public void SetGreen(int green)
+        {
+            this.green = green;
+        }
+
+        public void SetBlue(int blue)
+        {
+            this.blue = blue;
+        }
+
+        public void SetAlpha(int alpha)
+        {
+            this.alpha = alpha;
+        }
     }
 }
