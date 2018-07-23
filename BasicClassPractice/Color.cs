@@ -77,5 +77,12 @@ namespace BasicClassPractice
         {
             return ((red + blue + green) / 3);
         }
+
+        //Learned about using properties for getters and setters. Modified versions of the above code is below
+
+        public int Red { get; set; }
+        public int Green { get; set; }
+        public int Blue { get; set; }
+        public int Alpha { get; set; }
     }
 }
